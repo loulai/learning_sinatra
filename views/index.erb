@@ -1,4 +1,11 @@
 <div style='border: 5px dashed aqua'>
-	<p>My name is <%=@name %></p>
+	<% if @visitor_name %>
+		Hello, <%= @visitor_name %>!
+	<%end%>
+
+	<% if @name %>
+		My name is <%= @name %>
+	<%end%>
+
 	<img src='http://theuglyvolvo.files.wordpress.com/2013/10/costume-sushi.jpg'>
 </div>
