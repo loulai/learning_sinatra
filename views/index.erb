@@ -1,10 +1,21 @@
-<div style='border: 5px dashed aqua'>
-	<% if @visitor_name %>
-		Hello, <%= @visitor_name %>!
-	<%end%>
 
+	<head>
+		
+	</head>
+
+
+
+<div style='border: 5px dashed aqua'>
 	<% if @name %>
 		My name is <%= @name %>
+	<%end%>
+
+	<% if @visitor_name %>
+		<p>Hello, <%= @visitor_name %>!</p>
+	<%end%>
+
+	<% if @page_name %>
+		This is the /<%=@page_name%> page.
 	<%end%>
 
 	<img src='http://theuglyvolvo.files.wordpress.com/2013/10/costume-sushi.jpg'>
